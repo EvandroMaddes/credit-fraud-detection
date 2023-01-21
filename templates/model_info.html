@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+  <style>
+	td, th {
+		text-align: left;
+		padding: 20px;
+	}
+	tr{
+		background-color: #92A8D1;
+	}
+	</style>
+</head>
+<br>
+<br>
+ <h2 style="color:white; align:center">MODEL SUMMARY</h2>
+   <br>
+<body> 
+	<table style="border:2px solid black;border-radius: 1em;margin-left:auto;margin-right:auto; border-collapse: collapse;">		
+		<tr>
+			<th>Layer (type)</th>
+			<th>Output Shape</th>
+			<th>Param #</th>
+		  </tr>
+		  <tr>
+			<td>dense (Dense)</td>
+			<td>(None, 256)</td>
+			<td>7936</td>
+		</tr>
+		<tr>
+			<td>batch_normalization (BatchNormalization)</td>
+			<td>(None, 256)</td>
+			<td>1024</td>
+		</tr>
+		<tr>
+			<td>dropout (Dropout)</td>
+			<td>(None, 256)</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>dense_1 (Dense)</td>
+			<td>(None, 256)</td>
+			<td>65792</td>
+		</tr>
+		<tr>
+			<td>batch_normalization_1 (BatchNormalization)</td>
+			<td>(None, 256)</td>
+			<td>1024</td>
+		</tr>
+		<tr>
+			<td>dropout_1 (Dropout)</td>
+			<td>(None, 256)</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>dense_2 (Dense)</td>
+			<td>(None, 256)</td>
+			<td>65792</td>
+		</tr>
+		<tr>
+			<td>batch_normalization_2 (BatchNormalization)</td>
+			<td>(None, 256)</td>
+			<td>1024</td>
+		</tr>
+		<tr>
+			<td>dropout_2 (Dropout)</td>
+			<td>(None, 256)</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>dense_3 (Dense)</td>
+			<td>(None, 1)</td>
+			<td>257</td>
+		</tr>
+		</table>
+		
+		<p>
+			Total params: 142,849<br>
+			Trainable params: 141,313<br>
+			Non-trainable params: 1,536<br>
+		</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<a href="/" class="button">Return to homepage</a>
+   </body>
+   
+</html>
+
