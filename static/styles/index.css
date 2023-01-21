@@ -1,0 +1,84 @@
+label {
+    margin-bottom: 10px;
+	font-family: Verdana;
+	font-size: 14px;
+	display: block;
+	width: 90px;
+}
+
+body{
+	background-color :#34568b;
+	font-family:verdana;
+	text-align:center
+}
+
+input {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #balck;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color :#92A8D1;
+}
+
+p {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 300px;
+  /* Form outline */
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color :#92A8D1;
+}
+
+
+a {
+    margin-bottom: 30px;
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	width: 90px;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-family: Verdana;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.button {
+  background-color: #92A8D1;
+  border: 2px solid black;
+  border-radius: 1em;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+

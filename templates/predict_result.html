@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+  <br>
+<br>
+   <h2 style="color:white; align:center"> PREDICTION RESULT </h2>
+   <br>
+	
+</head>
+   <body>
+   <p>
+	{{ prediction }}
+	<br>
+	<script>
+		function getParameter(vars) {
+			return vars
+		}
+		
+		function display_image(src, width, height, alt) {
+		var a = document.createElement("img");
+		a.src = src;
+		a.width = width;
+		a.height = height;
+		a.alt = alt;
+		document.body.appendChild(a);
+		}
+		
+		
+		var toCheck = "This is a FRAUD :("
+		userInput = getParameter({{prediction|tojson}})
+		
+		if (userInput == toCheck) {
+			display_image('/static/styles/fraud.svg', 
+							 300, 
+							 250, 
+							 'JavaScriptImage');			
+			}
+
+		</script>
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<a href="/" class="button">Return to homepage</a>
+   </body>
+</html>
